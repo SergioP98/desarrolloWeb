@@ -1,0 +1,266 @@
+
+.container_12{
+		 background-image:  url("../fondo-copia.png");
+		 background-repeat: no-repeat;
+	}
+	
+	/*Cabecera*/
+	header{
+		padding-bottom: 25px;
+	}
+
+	header img{
+		width: 90%;
+		height: auto;
+		padding: 25px 0px 0px 30px;
+	}
+
+/*Menu de las imagenes con los enlaces*/
+		
+	.bloque1 {
+		text-align: right;
+		margin-top:35px;
+		font-size:20px;
+	}
+
+	.bloque1 a{
+		text-decoration: none;
+	}
+	
+	.bloque1 img{
+		width: 4%;
+		position: relative;
+		bottom: 13px;
+	}
+
+	.enlace{
+		padding-left: 9px;
+	}
+
+	.imagen{
+  		padding-right: 40px;
+  	}
+	
+
+  /*Buscador de la pagina*/
+	.buscador{
+  		text-align: right;
+		padding-top:35px;
+  	}
+
+  	.buscador input{
+  		border-radius: 10px 10px 10px 10px;
+		height:25px;
+  	}
+
+  	.buscador i{
+		padding-right: 40px;
+	}
+	
+
+	/*Menu */
+
+	.menu{
+	float:left;
+	width:100%;
+	margin:15px 0px 15px 0px;
+	font-size: 10px;
+
+	}
+
+	.menu li{
+	display:inline;
+	margin:0;
+	padding:0;
+	font-size: 20px;
+	font-family: 'Nunito Sans', sans-serif;
+	}
+
+	.menu a{
+	float:left;
+	display:block;
+	margin:1px;
+	padding:10px 10px 0px 0px;
+	text-decoration:none;
+	color:#000;
+	background-color:#ccc;
+	width: 145px;
+	text-align: center;
+	border: 1px solid black;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 10px 10px 10px 10px;
+	font-family: 'Nunito Sans', sans-serif;
+	}
+
+	.menu a:hover{
+	color:white;
+	font-size:0.9em;
+	background-color:black;
+	text-decoration:underline;
+	font-family: 'Nunito Sans', sans-serif;
+	}
+
+/*Contenido Parte 1*/
+	
+	article{
+		padding-top: 10px;
+
+	}
+
+	.carrusel img{
+		width: 480px;
+		height: 280px;
+	}
+
+	.maxVendido{
+		font-size: 20px;
+		font-family: "Comic Sans MS";
+		padding-top: 80px;
+	}
+
+	.maxVendido h5{
+		text-align: center;
+		font-style: italic;
+		text-decoration: underline;
+		font-size: 24px;
+	}
+
+	.maxVendido a{
+		text-decoration: none;
+		color: black;
+	}
+
+	.maxVendido ul{
+		padding-left: 15px;
+	}
+
+/*Producto*/
+	.pro{
+		padding-left: 45px;
+		font-family: 'Quando', serif;
+		font-size: 28px;
+		padding-top: 8px;
+	}
+
+/*Agrandar la img al pasar el raton*/
+
+	.zoom{
+		transition: 1.2s ease;
+ 		-moz-transition: 1.2s ease; /* Firefox */
+ 		-webkit-transition: 1.2s ease; /* Chrome - Safari */
+ 		-o-transition: 1.2s ease; /* Opera */
+	}
+	.zoom:hover{
+		transform : scale(1.15);
+		-moz-transform : scale(1.15); /* Firefox */
+		-webkit-transform : scale(1.15); /* Chrome - Safari */
+		-o-transform : scale(1.15); /* Opera */
+		-ms-transform : scale(1.15); /* IE9 */
+	}
+
+
+/*Contenido Parte 2 */
+	.barra1{
+		padding-top: 10px;	
+		padding-bottom: 16px;
+	}
+	.barra1 img{
+		width: 250px;
+		height: 230px;
+		padding-left: 30px;
+	}
+
+	.barra1 p{
+		text-align: center;
+		font-size: 20px;
+		padding-top:8px;
+		font-family: 'Cormorant Upright', serif;
+		font-weight: bolder;
+	}
+
+	.barra2 img{
+		width: 250px;
+		height: 230px;
+		padding-left: 30px;
+	}
+
+	.barra2 p{
+		text-align: center;
+		font-size: 20px;
+		padding-top:8px;
+		font-family: 'Cormorant Upright', serif;
+		font-weight: bolder;
+	}
+
+	.barra2 {
+		padding-bottom: 20px;
+	}
+
+/*Pie */
+
+	footer{
+		background-color:#BBF6F8;
+		height: 150px;
+	}
+
+	.final{
+		margin-top: 20px;
+	}
+
+	.redes {
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+
+	}
+
+	.redes i{
+		padding-left: 10px;
+
+	}
+
+	.contacto{
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.contacto p{
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.informacion{
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.informacion a{
+		text-decoration:none;
+		color: black;
+		font-weight: bolder;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.redes a{
+		color:black;
+	}
+
+
+#carousel li{
+	list-style: none;
+}
+
+/*Carrusel
+
+	div.ic_myCarousel {
+	    margin: 20px auto 0 auto;
+	    clear:right;
+	}
+	.infiniteCarousel {
+	    box-shadow: 0px 3px 3px #333;
+	    border: 3px solid #333;
+	}
+	.ic_left_nav, .ic_right_nav {
+	    display: none;
+	}
+*/

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">-->
+<head>
+   <title>Prototipo</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Referencias CSS -->
+   <link rel="stylesheet" type="text/css" href="./CSS/reset.css"/>
+   <link rel="stylesheet" type="text/css" href="./CSS/text.css"/>
+   <link rel="stylesheet" type="text/css" href="./CSS/960.css"/>
+   <link rel="stylesheet" type="text/css" href="./CSS/estilos.css"/>
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+
+<!--Tipos de Letras-->
+   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Croissant+One" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet"> <!-- Texto para Producto-->
+
+<!--Carrusel -->
+<!--<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://www.catchmyfame.com/jquery/infinitecarousel3/jquery.infinitecarousel3.min.js"></script>
+<script type="text/javascript" src="carrusel.js"></script>  -->
+   
+</head>
+<body>
+
+<!--Contenedor General-->
+<div class="container_12">
+
+<!--Cabecera-->
+<header class="grid_12">
+      
+   <div class="alpha grid_2 suffix_1">
+      <img src="logo.png" alt="Logotipo"/>
+                                          
+   </div>
+
+ <div class="grid_9  menuD omega">
+
+         <div class="alpha grid_9 bloque1 omega">
+            <a href="">Registro</a>
+            <a href="" class="enlace">Acceso</a>
+            <a href=""> <img src="./Paises/spain.png" alt="Spanish"/></a>
+            <a href="" class="imagen"> <img src="./Paises/english.png" alt="English"/></a>
+         </div>
+
+        <div class="clear"></div>
+
+         <div class="alpha grid_9 buscador omega">
+            <form method="POST" action="hola.php">
+               <input type="text" name="buscador" size="50"/>
+               <i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+         </div>
+      <div class="clear"></div>
+</div>
+</header>
+ 
+ <!-- Menu -->
+<nav class="grid_12">
+   <div class="alpha grid_12 menu">
+     <div class="grid_11 prefix_1">
+       <ul>
+        <li><a href="">Figuras</a></li>
+        <li><a href="">Comics</a></li> 
+        <li><a href="">Mangas</a></li> 
+        <li><a href="">Juegos</a></li> 
+        <li><a href="">Merchandasing</a></li> 
+      </ul>
+     </div>
+     <div class="clear"></div>
+   </div>
+   <div class="clear"></div>
+</nav>
+
+<!--Carrusel-->
+<article class="grid_12">
+   <div class="alpha grid_12 carrusel">
+      <div class="alpha grid_7 suffix_1">
+         <ul id="carousel">
+       <li><img src="./ImagenesCarrusel/yoshi.jpg" alt=""></li>
+        </ul>
+      </div>
+
+<!--Productos Mas vendidos-->
+      <div class="grid_3 suffix_1 maxVendido omega">
+         <h5>Productos mas vendidos</h5>
+         <ul>
+            <li>Naruto Tomo1</li>
+            <li>Naruto tomo2</li>
+            <li>Naruto tomo 3</li>
+         </ul> 
+      </div>
+      <div class="clear"></div>
+
+<!--Productos-->
+      <h2 class="pro">Productos</h2>
+      <div class="clear"></div>
+
+<!--Productos Barra 1 -->
+      <div class="grid_4 barra1 zoom">
+         <img src="./Imagenes/naruto.png" alt="Naruto"/>
+         <p>Naruto Tomo 1<br/>
+         6.99€</p>
+      </div>
+
+      <div class="alpha grid_4 barra1 zoom">
+         <img src="./Imagenes/OP.png" alt="One Piece"/>
+         <p>One Piece Tomo 1<br/>
+         6.99€</p>
+      </div>
+
+      <div class="alpha grid_4 barra1 zoom">
+         <img src="./Imagenes/Bleach.png" alt="Bleach"/>
+         <p>Bleach Tomo 1<br/>
+         6.99€</p>
+      </div>
+      <div class="clear"></div>
+
+<!--Productos Barra 2 -->
+       <div class="grid_4 barra2 zoom">
+         <img src="./Imagenes/1.png" alt="Miku"/>
+         <p>Nendoroid Miku<br/>
+         14.99€</p>
+      </div>
+
+      <div class="alpha grid_4 barra2 zoom">
+         <img src="./Imagenes/NarutoPS4.png" alt="Naruto PS4"/>
+         <p>Naruto Ultimate Ninja Storm PS4<br/>
+         49.99€</p>
+      </div>
+
+      <div class="alpha grid_4 barra2 zoom">
+         <img src="./Imagenes/KHR.png" alt="KHR"/>
+         <p>Poster Kingdom Hears<br/>
+         1.50€</p>
+      </div>
+      <div class="clear"></div>
+   </div>
+</article>
+
+<!--Pie-->
+<footer class='grid_12'>
+   <div class="alpha grid_12 final">
+      <div class="alpha grid_4 contacto">
+         <h5>Contacto</h5>
+         <p><b>palancas.gmail.com<br/>
+         921212/494949494</b></p>
+      </div>
+
+       <div class="alpha grid_4 informacion">
+         <h5>Informacion</h5>
+         <a href="#">¿Quienes Somos?</a><br/>
+         <a href="#">Condiciones de uso</a><br/>
+         <a href="#">Condiciones de venta</a>
+      </div>
+
+       <div class="alpha grid_4 redes">
+        <a href="#"> <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+        <a href="#"> <i class="fa fa-twitter-square fa-3x " aria-hidden="true"></i></a>
+        <a href="#"> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+      </div>
+   </div>
+</footer>
+
+<div class="clear"></div> 
+
+</div>
+</body>
+</html>
