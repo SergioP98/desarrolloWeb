@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<title>Registro</title>
+	<meta charset="UTF-8">
+
+	<link href="CSS/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script>
+		var jobs = new Array("seleccione un trabajo","SECRETARIO","STAFF","ANALYST","VENDEDOR","MANAGER","PRESIDENT");
+		var boss = new Array("seleccione un jefe","Juan","Kevin","Jean","Lynn","Leslie","Cynthia","Daniel","Karen","Sarah","Gregory","Terry","Chris","Raymond","Richard","Kenneth","Denise","Marion","Carol","Dario","Livia","Matthew","Paul","Francis","Mary","Diane","Fred","Jennifer","Grace","Michael","Barbara","Alice","James",);
+	</script>
+
+	</head>
+	<body>
+				<!-- FORMU REGISTRO -->
+				<h1 class="texto">Formulario</h1>
+				<a href="./login.html" class="enlace">LOGIN</a>
+				<div class="login-form agileits-right"> 
+					<div class="agile-row">
+						<h3>Registro</h3> 
+						<div class="login-agileits-top"> 	
+							<form action="./login.html" method="post" class="registro" onsubmit='setCookie(nombre.value,password2.value)'><!-- onsubmit="setCookie(nombre.value,password2.value);" -->
+								<p> Los campos con un * son obligatorios. El resto son opcionales</p>
+								<p>*Nombre Usuario </p>
+								<input type="text" id="nombre"  name="nombre" required="required"
+								title="Solo letras. Tamaño mínimo: 2. Tamaño máximo: 15" placeholder="Nombre" pattern="[A-Za-z]{2,15}" />
+								<!-- <div class="errorNombre" id="errorNombre"></div> -->
+								<span class="errorNombre" id="errorNombre"></span>
+
+								<p>*Apellido</p>
+								<input type="text" id="apellido"  name="apellido" required="required"
+								title="Solo letras. Tamaño mínimo: 2. Tamaño máximo: 15" placeholder="Apellido" pattern="[A-Za-z]{2,15}" />
+								<!-- <div class="errorApellido"></div> -->
+								<span class="errorApellido" id="errorApellido"></span>
+
+
+								<p>*Correo</p>
+								<input type="email" id="correo" name="correo" required="required" placeholder="example@pufo.es" pattern="[A-Za-z]+@(pufo.es){1}" />
+								<span class="errorCorreo" id="errorCorreo"></span>
+
+								<p>Nombre Trabajos</p>
+								<!-- <span class="abouttabletext" > -->
+									<select name="select" id="trabajos">
+										<script>
+											for(var i=0; i<jobs.length; i++)
+												document.write("<option value="+jobs[i]+">"+jobs[i]+"</option>");
+										</script>
+									</select>
+								<!-- </span> -->
+
+								<p>Nombre Jefes</p>
+								<!-- <span class="abouttabletext" > -->
+									<select name="select" id="pais">
+										<script>
+											for(var i=0; i<boss.length; i++)
+												document.write("<option value="+boss[i]+">"+boss[i]+"</option>");
+										</script>
+									</select>
+								<!-- </span> -->
+
+								<p>*Fecha de Contrato</p>
+								<input type="date" id="contrato" name="contrato" required="required" min="2000-01-01" onchange="comprobarFecha();" title="No puede ser anterior al año 2000 ni posterior a la fecha actual"/> 
+								<br/><span class="errorFecContra" id="errorFecContra"></span>
+								
+
+								<p>Telefono Móvil</p>
+								<input type="text" id="movil" name="movil" placeholder="Telefono" pattern="[6|7][0-9]{8}" title="Debe ser un número válido español (9 dígitos que comienzan por 6 o 7)"/>  
+								<span class="errorTelef" id="errorTelef"></span>
+
+								<p>*Salario</p>
+								<input type="text" id="salario" name="salario" placeholder="Salario" title="No puede ser menor que el salario mínimo (858,55€) ni mayor que el del CEO (12.000€)"/>
+								<span class="errorSalario" id="errorSalario"></span>
+
+								<p>*Contraseña</p>
+								<input type="password" id="password" name="password" required="required" 
+								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W)[A-Za-z\d\W]{8,16}" placeholder="Contraseña" title="Debe tener al menos ocho caracteres y contener al menos una letra minúscula, una mayúscula, un número y un símbolo"/> 
+								<span class="errorContra" id="errorContra"></span>   
+								
+								<p>*Confirmar contraseña</p>
+								<input type="password" id="password2" name="password2" required="required" 
+								pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="Confirmar Contraseña"/> 
+								<span class="errorContra2" id="errorContra2"></span>    
+								  
+
+
+								<!-- Enviar -->
+								<input type="submit" name="enviar" value="enviar" id="enviar">
+							</form> 	
+						</div>  
+					</div>  
+				</div> 
+		<script src="validaciones.js"></script>
+	</body>
+	</html>

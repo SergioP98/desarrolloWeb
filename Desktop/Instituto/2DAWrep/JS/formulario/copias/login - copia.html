@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link href="CSS/style.css" rel="stylesheet" type="text/css" media="all" />
+		<meta charset="UTF-8">
+</head>
+
+<body><!-- onload="despuesR()" -->
+	<div class="main">
+			<h3 class="loginNombre" id="loginNombre"></h3>
+			<div id="cerrarSesion" style="display: none;"><button class="botonLogout" onclick="logoutSesion()">Cerrar Sesion</button></div>
+			<div class="mainC">
+				<div class="login-form login-form-left"> 
+					<div class="agile-row">
+						<h3>Login</h3> 
+						<div class="login-agileits-top"> 	
+							<form method="post" class='loggin'> 
+								<p>Usuario </p>
+								<input type="text" class="usuario" id="usuario" placeholder="Usuario" />
+								
+								<p>Contraseña</p>
+								<input type="password" class="password" name="password" id="contrasenia" placeholder="Contraseña" />
+						
+								<input type="submit" value ="Iniciar Sesion" id='submit'>
+							</form> 	
+						</div> 
+						
+					</div>  
+				</div>
+			</div>
+	</div> 
+ 	<script src="validacionLogin.js"></script>
+</body>
+</html>
